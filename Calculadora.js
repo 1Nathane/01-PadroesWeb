@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 	$('#igual').click(function () {
 		if (operador == '+')
-			resultado = (conta + parseInt(parcela1))
+			resultado = (conta + parseInt(parcela1));
 		if (operador == '-')
 			resultado = (conta - parseInt(parcela1));
 		if (operador == '/')
