@@ -1,10 +1,7 @@
 $(document).ready(function () {
 	var parcela1 = '';
 	var escrita = '';
-	var soma = 0;
-	var subtracao = 0;
-	var mutiplicacao = 0;
-	var divisao = 0;
+	var conta = 0;
 	var resultado = 0;
 	var operador;
 	$('button').click(function () {
@@ -20,7 +17,7 @@ $(document).ready(function () {
 		}
 		$('#resultado').text(escrita);
 	});
-	$('#mais').click(function () {
+	$('#mais , #menos, #vezes, #divisao').click(function () {
 		if (resultado != 0 && parcela1 == '') {
 			parcela1 = resultado;
 			resultado = 0;
@@ -30,35 +27,41 @@ $(document).ready(function () {
 				resultado = 0;
 			}
 		}
-		if (soma == 0) {
-			soma += parseInt(parcela1);
+		if (conta == 0) {
+			conta += parseInt(parcela1);
 			parcela1 = '';
 		}
 	});
-	$('#menos').click(function () {
-		if (resultado != 0 && parcela1 == '') {
-			parcela1 = resultado;
-			resultado = 0;
-		}
-		else {
-			if (resultado != 0 && parcela1 != '') {
-				resultado = 0;
-			}
-		}
-		if (subtracao == 0) {
-			subtracao += parseInt(parcela1);
-			parcela1 = '';
-		}
-	});
-	$('#vezes').click(function () {});
-	$('#divisao').click(function () {});
+
+
 	$('#igual').click(function () {
-		if (operador == '+') resultado = (soma + parseInt(parcela1))
-		if (operador == '-') resultado = (subtracao - parseInt(parcela1));
+		if (operador == '+')
+			resultado = (conta + parseInt(parcela1))
+		if (operador == '-')
+			resultado = (conta - parseInt(parcela1));
+		if (operador == '/')
+			resultado = (conta / parseInt(parcela1));
+		if (operador == 'x')
+			resultado = (conta * parseInt(parcela1));
 		$('#resultado').text(resultado);
-		soma = 0;
-		subtracao = 0;
-		escrita = 'Ans';
+
+
+		conta = 0;
+
+		escrita = '';//colocar como Ans quando for usar resposta anteriro.
 		parcela1 = '';
+	});
+
+	$('#OFF').click(function () {
+		resultado = 0;
+		escrita = '';
+		parcela1='';
+		soma = 0;
+	 	subtracao = 0;
+		mutiplicacao = 0;
+		divisao = 0;
+		operador = '';
+
+
 	});
 });

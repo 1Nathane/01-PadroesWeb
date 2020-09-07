@@ -1,24 +1,27 @@
 table {
-	background-color: gainsboro;
 	margin: auto;
-	align-content: center;
 }
 
+#caixa {
+	margin: auto;
+	width: 270px;
+	height: 330px;
+	background-color: gainsboro;
+}
 
 div  {
-
+	height: 50px;
 	text-align: right;
 	font-size: 18pt;
 	background-color: darkseagreen;
-
+	margin-top: 20px;
+	margin-bottom: 8px;
 }
 
-th {
+button {
 
 	align-content: center;
-	padding: 6pt;
-	content: 6pt;
-	border: solid;
+	width: 60px;
+	height: 60px;
 
 }
-

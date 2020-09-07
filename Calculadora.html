@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	<link href="Calculadora.css" rel="stylesheet" /> </head>
 
-<body>
+<body class="container">
 	<h1>Calculadora</h1>
+	<div id="caixa">
 	<table>
 		<thead>
 			<tr>
@@ -64,13 +65,13 @@
 			</tr>
 			<tr>
 				<th>
-					<button id="OFF" class="btn btn-primary">OFF</button>
+					<button id="OFF" class="btn btn-danger">OFF</button>
 				</th>
 				<th>
 					<button id="0" class="btn btn-primary">0</button>
 				</th>
 				<th>
-					<button id="igual" class="btn btn-danger">=</button>
+					<button id="igual" class="btn btn-success">=</button>
 				</th>
 				<th>
 					<button id="mais" class="btn btn-warning" data-sinal="+">+</button>
@@ -78,6 +79,7 @@
 			</tr>
 		</tbody>
 	</table>
+ 	</div>
 </body>
 
 </html>
