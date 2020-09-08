@@ -35,14 +35,20 @@ $(document).ready(function () {
 
 
 	$('#igual').click(function () {
-		if (operador == '+')
-			resultado = (conta + parseInt(parcela1));
-		if (operador == '-')
-			resultado = (conta - parseInt(parcela1));
-		if (operador == '/')
-			resultado = (conta / parseInt(parcela1));
-		if (operador == 'x')
-			resultado = (conta * parseInt(parcela1));
+		switch(operador){
+			case '+':
+				resultado = (conta + parseInt(parcela1));
+				break;
+			case '-':
+				resultado = (conta - parseInt(parcela1));
+				break;
+			case '/':
+				resultado = (conta / parseInt(parcela1));
+				break;
+			case 'x':
+				resultado = (conta * parseInt(parcela1));
+				break;
+		}
 		$('#resultado').text(resultado);
 
 
