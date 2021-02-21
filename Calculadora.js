@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	document.getElementById('OFF').style.fontSize = '14pt'
+
 	var parcela1 = '';
 	var escrita = '';
 	var conta = 0;
@@ -67,6 +69,7 @@ $(document).ready(function () {
 		mutiplicacao = 0;
 		divisao = 0;
 		operador = '';
+
 
 
 	});

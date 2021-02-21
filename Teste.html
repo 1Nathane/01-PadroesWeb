@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Calculadora Simples</title>
+	<meta charset="utf-8" />
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="Calculadora.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link href="Calculadora.css" rel="stylesheet" /> </head>
+
+<body class="container">
+	<h1>Calculadora</h1>
+	<div id="caixa">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4">
+					<div class="panel-body" id="resultado"></div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+					<button id="7" class="btn btn-primary">7</button>
+				</th>
+				<th>
+					<button id="8" class="btn btn-primary">8</button>
+				</th>
+				<th>
+					<button id="9" class="btn btn-primary">9</button>
+				</th>
+				<th>
+					<button id="divisao" class="btn btn-warning" data-sinal="/">/</button>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<button id="4" class="btn btn-primary">4</button>
+				</th>
+				<th>
+					<button id="5" class="btn btn-primary">5</button>
+				</th>
+				<th>
+					<button id="6" class="btn btn-primary">6</button>
+				</th>
+				<th>
+					<button id="vezes" class="btn btn-warning" data-sinal="x">x</button>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<button id="1" class="btn btn-primary">1</button>
+				</th>
+				<th>
+					<button id="2" class="btn btn-primary">2</button>
+				</th>
+				<th>
+					<button id="3" class="btn btn-primary">3</button>
+				</th>
+				<th>
+					<button id="menos" class="btn btn-warning" data-sinal="-">-</button>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<button id="OFF" class="btn btn-danger">OFF</button>
+				</th>
+				<th>
+					<button id="0" class="btn btn-primary">0</button>
+				</th>
+				<th>
+					<button id="igual" class="btn btn-success">=</button>
+				</th>
+				<th>
+					<button id="mais" class="btn btn-warning" data-sinal="+">+</button>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+ 	</div>
+
+</body>
+
+</html>
